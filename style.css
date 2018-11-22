@@ -305,6 +305,7 @@ footer{
     width: 77px;
     height: 30px;
     background: rgba(0, 0, 0, 0.25);
+    color: #871cff;
     display:block;
     text-decoration:none;
     -webkit-transition: all linear 0.2s; 
