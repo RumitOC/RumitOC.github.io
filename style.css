@@ -44,6 +44,10 @@ nav{
 }
 .topnav .icon{
 	display: none;
+	transition: .3s linear;
+}
+.topnav .icon:hover{
+	color: #871cff;
 }
 main{
 	display: flex;
@@ -157,7 +161,7 @@ main .main_about{
 .main_services p{
 	text-align: center;
 	color: #686868;
-	margin-bottom: 70px;
+	margin-bottom: 30px;
 }
 .services_card h4{
 	margin-top: 30px;
@@ -165,7 +169,7 @@ main .main_about{
 }
 .main_clients{
 	background: #252525;
-	padding: 100px 0 205px 0;
+	padding: 100px 0 150px 0;
 	color: #fff;
 	text-align: center;
 	
@@ -205,7 +209,7 @@ main .main_about{
 	margin-bottom: 30px;
 }
 .main_work p{
-	margin-bottom: 150px;
+	margin-bottom: 90px;
 	color: #686868;
 }
 .main_work img:hover{
@@ -318,7 +322,7 @@ footer{
     }
  
 #back-top a:hover{
-    height: 70px;
+    height: 60px;
     background: #663399;
     -webkit-transition: all linear 0.2s; 
     -moz-transition: all linear 0.2s;
@@ -350,16 +354,25 @@ footer{
 
 }
 
+
+
 @media screen and (max-width: 1010px) {
+
+
+	.header_logo{ 
+	margin-left: 6%;
+	}
+
 	.topnav a{
 		display: none;
+		font-size: 18px;
 	}
 	.topnav a.icon{
 		float: right;
-		margin-top: -17px;
+		margin-top: -20px;
 		display: block;
 		color: #fff;
-		font-size: 25px;
+		font-size: 40px;
 	}
 	nav{
 		width: 100%;
@@ -432,13 +445,12 @@ footer{
 	.line3 img:not(:first-child){
 		display: none;
 	}
-	.contact_wrapper{
-	width: 360px;
-	margin: 0 auto;
-	color: #686868;
-	}
 	.form_inputs{
 	flex-direction: column;
+	}
+
+	input{
+	width: 755px;
 	}
 
 }
