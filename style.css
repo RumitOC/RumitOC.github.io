@@ -25,6 +25,18 @@ header{
 	cursor: pointer;
 	margin-top: 56px;
 	margin-left: 12%;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+	-webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+	-moz-animation: neon1 1.5s ease-in-out infinite alternate;
+	animation: neon1 1.5s ease-in-out infinite alternate;
+}
+.header_logo:hover {
+  color: #8922ff;
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
 }
 nav{
 	margin-top: 56px;
@@ -67,9 +79,17 @@ main .main_welcome h1{
 	color: #686868;
 	font-size: 44px;
 }
+
 .mycompany{
 	color: #8922ff;
 }
+.mycompany:hover {
+  color: #8922ff;
+  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
 .wrapper{
 	width: 76%;
 	margin: 0 auto;
@@ -349,7 +369,7 @@ footer{
 
 @media screen and (max-width: 1105px) {
 	nav{
-		margin-left: 10%;
+		margin-left: 3%;
 	}
 
 }
@@ -373,6 +393,7 @@ footer{
 		display: block;
 		color: #fff;
 		font-size: 40px;
+		margin-right: 6%;
 	}
 	nav{
 		width: 100%;
@@ -453,4 +474,24 @@ footer{
 	width: 755px;
 	}
 
+}
+
+
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #8922ff, 0 0 70px #8922ff, 0 0 80px #8922ff, 0 0 100px #8922ff, 0 0 150px #8922ff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #8922ff, 0 0 35px #8922ff, 0 0 40px #8922ff, 0 0 50px #8922ff, 0 0 75px #8922ff;
+  }
+}
+
+@-webkit-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #9a9a9a, 0 0 20px #9a9a9a, 0 0 30px #9a9a9a, 0 0 40px #8922ff, 0 0 70px #8922ff, 0 0 80px #8922ff, 0 0 100px #8922ff, 0 0 150px #8922ff;
+  }
+  to {
+    text-shadow: 0 0 5px #9a9a9a, 0 0 10px #9a9a9a, 0 0 15px #9a9a9a, 0 0 20px #8922ff, 0 0 35px #8922ff, 0 0 40px #8922ff, 0 0 50px #8922ff, 0 0 75px #8922ff;
+  }
 }
