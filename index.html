@@ -9,10 +9,10 @@
 </head>
 <body>
 	<header>
-		<div class="header_logo"><p>webSpace</p></div>
+		<div id="header" class="header_logo"><p>webSpace</p></div>
 		<nav>
   			<div class="topnav" id="myTopnav">
-  			<a href="#">ГЛАВНАЯ</a>
+  			<a href="#header">ГЛАВНАЯ</a>
   			<a href="#main_about">О НАС</a>
   			<a href="#main_team">КОМАНДА</a>
   			<a href="#main_work">ПОРТФОЛИО</a>
@@ -121,26 +121,25 @@
 		<div class="wrapper">
 			<div id="main_work" class="main_work">
 				<h2>ПОРТФОЛИО</h2>
-				<div class="line"></div>
 				<p><i>Свои фантазии современные веб-дизайнеры охотно воплощают в идеи, которые принимают самые необычные формы и размеры. Сейчас смело и нестандартно оформлять портфолио проектов могут как персональные сайты, так и лучшие digital-агентства или студии. Интернет переполнен впечатляющим дизайнами портфолио. Стремясь занять достойное место в творческом пространстве, дизайнеры и разработчики с интересом рассматривают новшества в оформлении портфолио-проектов (нужно быть в курсе последних дизайн-трендов).</b>Вдохновитесь примерами инновационного мышления – поощрите творческую свободу дизайнеров просмотром великолепных дизайнов-портфолио в современном стиле 2018.</i></p>
 				<div class="gallery">
 					<div class="line1">
-						<img src="img/poster1.jpg" alt="">
-						<img src="img/poster1.jpg" alt="">
-						<img src="img/poster1.jpg" alt="">
-						<img src="img/poster1.jpg" alt="">
+						<img src="img/gallery/spacegallery_01.jpg" alt="">
+						<img src="img/gallery/spacegallery_02.jpg" alt="">
+						<img src="img/gallery/spacegallery_03.jpg" alt="">
+						<img src="img/gallery/spacegallery_04.jpg" alt="">
 					</div>
 					<div class="line2">
-						<img src="img/poster2.jpg" alt="">
-						<img src="img/poster2.jpg" alt="">
-						<img src="img/poster2.jpg" alt="">
-						<img src="img/poster2.jpg" alt="">
+						<img src="img/gallery/spacegallery_05.jpg" alt="">
+						<img src="img/gallery/spacegallery_06.jpg" alt="">
+						<img src="img/gallery/spacegallery_07.jpg" alt="">
+						<img src="img/gallery/spacegallery_08.jpg" alt="">
 					</div>
 					<div class="line3">
-						<img src="img/poster3.jpg" alt="">
-						<img src="img/poster3.jpg" alt="">
-						<img src="img/poster3.jpg" alt="">
-						<img src="img/poster3.jpg" alt="">
+						<img src="img/gallery/spacegallery_09.jpg" alt="">
+						<img src="img/gallery/spacegallery_10.jpg" alt="">
+						<img src="img/gallery/spacegallery_11.jpg" alt="">
+						<img src="img/gallery/spacegallery_12.jpg" alt="">
 					</div>
 				</div>
 			</div>	
@@ -158,19 +157,14 @@
 
 		<section id="contact_from" class="contact_from">
 			<div class="contact_wrapper">
-				<h2>НАПИШИТЕ НАМ</h2>
-					
+					<h2>НАПИШИТЕ НАМ</h2>
 					<p>Мы рады видеть Вас в разделе "Напишите нам" официального агентсва <b>WEBSPACE.</b></br>Если у Вас есть вопросы и пожелания, Вы можете написать нам.</br><b>Мы ответим Вам в самое ближайшее время!</b></p>
-				<form action="#" name="nweform" method="post">
-					<div class="form_inputs">
-						<p>Имя <span class="red">*</span><input type="text"></p>
-						<p>Электронный адрес <span class="red">*</span><input type="text"></p>
-					</div>
-					<p>Сообщение<span class="red">*</span></p>
-					<textarea name="text"></textarea>
-					<div class="button_block">
-						<input type="submit" value="ОТПРАВИТЬ">
-					</div>
+				<form>
+					<p><input type="text" name="name" class="feedback-input" placeholder="Ваше имя" id="name"></p>
+					<p><input type="email" name="email" class="feedback-input" placeholder="E-mail" id="email"></p>
+					<p><textarea name="submit" id="comment" placeholder="Сообщение" class="feedback-input"></textarea></p>
+					<input type="submit" value="Отправить" class="button-submit">
+					<div class="ease"></div>
 				</form>
 			</div>
 		</section>
